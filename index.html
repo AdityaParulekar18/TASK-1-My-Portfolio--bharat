@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>About me</li>
+                <li>Skills</li>
+                <li class="btn"><button onclick="openModal()" class="signupbutton"> Contact Me</button></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="home">
+        <div class="left">
+            <p> Hello, <br>I'm <span class="orangerred">Aditya</span> Parulekar</p>
+            <p class="subheading">Web developer</p>
+        </div>
+        <div class="image">
+            <img src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704585600&semt=ais.png" alt="">
+        </div>
+    </div>
+
+    <div class="aboutme orangerred">
+        <h1>About Me</h1>
+    </div>
+
+    <div class="leftimg">
+        <img src="C:\Users\amolb\Desktop\ADI DOCUMENTS\ADITYA NEW PIC.jpeg" alt="">
+    </div>
+    <div class="content">I'm a passionate and creative web developer based in Mumbai. I've had the opportunity to
+        work on various projects, honing my skills in HTML, CSS, and JavaScript. Outside the world of coding, you can find me playing various sports. I believe in the power of
+        lifelong learning, and I am always eager to explore new technologies and enhance my skill set. Let's
+        collaborate and create something amazing together!</div>
+
+    <div class="skills">
+        <h1 class="orangerred">My Skills</h1>
+    </div>
+    <div class="skills_section">
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Python</p>
+                    <P>50%</P>
+                </div>
+                <div class="bar">
+                    <span class="pyth"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>50%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java</p>
+                    <P>70%</P>
+                </div>
+                <div class="bar">
+                    <span class="java"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>C++</p>
+                    <P>75%</P>
+                </div>
+                <div class="bar">
+                    <span class="node"></span>
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="myModal" class="modal">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <div class="signup">
+                <form>
+                    <h1>Contact Me</h1>
+                    <div class="form-row">
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer01">First name :</label>
+                            <input type="text" class="form-control is-valid" id="validationServer01"
+                                placeholder="First name" required>
+
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServer02">Last name :</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02"
+                                placeholder="Last name" required>
+
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="validationServerUsername">Username :</label>
+
+
+                            <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                                placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+
+
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="validationServer02">Email :</label>
+                            <input type="text" class="form-control is-valid" id="validationServer02"
+                                placeholder="abc@gmail.com" required>
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 mb-3">
+
+
+                        </div>
+                        <div class="col-md-3 mb-3">
+
+
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="validationServer05">Message :</label>
+                            <input type="text" class="form-control is-invalid" id="validationServer05"
+                                placeholder="Type your message here..." required>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3"
+                                required>
+                            <label class="form-check-label" for="invalidCheck3">
+                                I Agree to terms and conditions
+                            </label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+
+
+        <script>
+            function openModal() {
+                document.getElementById('myModal').style.display = 'block';
+            }
+
+            function closeModal() {
+                document.getElementById('myModal').style.display = 'none';
+            }
+        </script>
+
+
+
+</body>
+
+</html>
+
+
